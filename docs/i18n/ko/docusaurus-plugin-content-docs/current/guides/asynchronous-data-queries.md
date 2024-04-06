@@ -443,7 +443,7 @@ function QueryErrorMessage({error}) {
         ret.push(node);
       }
     }
-    return ret
+    return ret;
   }, [snapshot, error]);
   const retry = useRecoilCallback(({refresh}) =>
     () => selectors.forEach(refresh),
